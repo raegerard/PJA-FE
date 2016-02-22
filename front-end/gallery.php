@@ -1,6 +1,20 @@
+<?php
+session_start();
+include_once 'dbcon.php';
+
+?>
+<?php 
+    require_once('data/database.php');
+    
+    $database = new Database();
+    $database->connect();
+
+    $rooms = mysqli_fetch_array($database->execute("SELECT * FROM room ORDER BY rm_type DESC"));
+?>
 <?php 
 include("header.php")
 ?> 
+
             <!-- page content -->
             <div class="page-content">
                 
@@ -46,7 +60,8 @@ include("header.php")
                                 <a class="thumbnail-item">
                                     <img src="assets/img/gallery/general-7.jpg" alt="General 1"/>
                                     <div class="thumbnail-info">
-                                        <p>Sample text: khagsdk kjlashdkjas kjashdkjashd kjashdj</p>
+                                        <?php print_r($rooms['rm_type']); ?>
+                                        <br>
                                         <button class="btn btn-primary"><span class="fa fa-link"></span></button>
                                         <button class="btn btn-primary"><span class="fa fa-eye"></span></button>
                                     </div>
