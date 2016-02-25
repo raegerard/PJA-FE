@@ -13,7 +13,15 @@
         <link rel="stylesheet" type="text/css" href="css/revolution-slider/extralayers.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/revolution-slider/settings.css" media="screen" />
         
-        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />                  
+        <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" /> 
+
+        <!--bootstrap script-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-lightbox.min.css">
+         
+        <script src="assets/js/bootstrap.js"></script> <!-- Or just bootstrap-tooltip.js -->
+        <script src="assets/js/bootstrap-lightbox.js"></script>
+        <script src="assets/js/bootstrap-img-lightbox-tooltip.js"></script>
 
     </head>
     <body>
